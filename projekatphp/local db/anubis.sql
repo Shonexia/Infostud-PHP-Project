@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 06, 2022 at 08:45 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.1
+-- Generation Time: Jun 26, 2022 at 08:14 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -63,19 +63,20 @@ CREATE TABLE `zaposleni` (
 --
 
 INSERT INTO `zaposleni` (`zaposleni_id`, `zaposleni_ime`, `zaposleni_prezime`, `pozicija_id`, `zaposleni_plata`, `zaposleni_email`, `zaposleni_password`) VALUES
-(1, 'Nebojsa', 'Basic Palkovic', 1, 1500, 'nele256@yahoo.com', NULL),
+(1, 'Nebojsa', 'Basic Palkovicc', 2, 200, 'nele256@yahoo.com', NULL),
 (3, 'Dario', 'Daric', 3, 1500, 'daric@yahoo.com', 'daric1989'),
 (4, 'Mirko', 'Miric', 4, 4363, 'miric@yahoo.com', NULL),
 (5, 'Sale', 'Salic', 3, 1800, 'salic@yahoo.com', 'salic1989'),
 (6, 'Bane', 'Banic', 2, 1300, 'banic@gmail.com', NULL),
 (9, 'Kristina', 'Krisic', 1, 1400, 'krisic@yahoo.com', NULL),
 (10, 'Goran', 'Goric', 1, 1200, 'goric@gmail.com', NULL),
-(11, 'Goran', 'Goric', 4, 3000, 'goric@yahoo.com', 'gogic1989'),
-(26, 'vesko', 'veskic', 1, 2450, 'veskic@yahoo.com', NULL),
-(41, 'veso', 'vesic', 4, 120, 'vesic@yahoo.com', NULL),
-(43, 'reno', 'renici', 2, 1240, 'renic@gmail.com', NULL),
-(44, 'nebo', 'nebic', 1, 2580, 'nebic@gmail.com', NULL),
-(45, 'Suzana', 'Suzic', 2, 850, 'suzic@gmail.com', NULL);
+(11, 'Goran', 'Goric', 4, 3000, 'goric@yahoo.com', 'goric1989'),
+(26, 'Vesko', 'Veskic', 1, 2450, 'veskic@yahoo.com', NULL),
+(41, 'Veso', 'Vesic', 4, 120, 'vesic@yahoo.com', NULL),
+(44, 'Nebo', 'Nebic', 1, 2580, 'nebic@gmail.com', NULL),
+(45, 'Suzana', 'Suzic', 2, 850, 'suzic@gmail.com', NULL),
+(46, 'Dule', 'Dulic', 4, 1345, 'dulic@gmail.com', NULL),
+(47, 'Sale', 'Petrovic', 4, 1300, 'petrovic@gmail.com', NULL);
 
 --
 -- Indexes for dumped tables
@@ -108,7 +109,7 @@ ALTER TABLE `pozicija`
 -- AUTO_INCREMENT for table `zaposleni`
 --
 ALTER TABLE `zaposleni`
-  MODIFY `zaposleni_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `zaposleni_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- Constraints for dumped tables
