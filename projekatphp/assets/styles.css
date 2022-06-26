@@ -52,12 +52,12 @@ a:hover {
 
 .nav-item {
   font-size: 20px;
-  border: 2px solid teal;
+  border: 2px solid steelblue;
   padding: 10px;
 }
 
 .logout {
-  border: 2px solid teal;
+  border: 2px solid steelblue;
   padding: 5px;
   width: 100px;
 }
@@ -67,7 +67,7 @@ a:hover {
   align-items: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: tomato;
+  background-color: teal;
   height: 100px;
 }
 
@@ -75,7 +75,7 @@ a:hover {
   text-align: center;
   align-items: center;
   width: 100%;
-  background-color: tomato;
+  background-color: teal;
   height: 50px;
   font-size: 20px;
 }
@@ -87,13 +87,13 @@ a:hover {
 }
 
 .main {
-  background-color: teal;
+  background-color: steelblue;
   height: 800px;
   font-size: 17px;
 }
 
 button {
-  background-color: tomato;
+  background-color: steelblue;
   border: 1px solid #555;
   border-radius: 10px;
   padding: 5px 10px;
@@ -102,8 +102,8 @@ button {
 }
 
 button:hover {
-  background-color: teal;
-  border: 1px solid tomato;
+  background-color: steelblue;
+  border: 1px solid teal;
   color: white;
 }
 

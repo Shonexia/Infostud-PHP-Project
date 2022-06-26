@@ -16,5 +16,5 @@ session_start();
         <div><a href="dashboard.php" class="nav-item">Main Page</a></div>
         <div><a href="zaposleni.php" class="nav-item">Employees</a></div>
         <div class="item"><?php echo "Welcome: " . $_SESSION['zaposleni_email']; ?></div>
-        <div class="item logout"><a href="loginhandle.php">Logout</a></div>
+        <div class="item logout"><a href="index.php">Logout</a></div>
     </nav>

@@ -7,6 +7,7 @@ include('header.php');
 include('../dashboard/db_connect.php');
 include('../dashboard/get_data.php');
 include('../dashboard/delete_user.php');
+include('../classes/User.php');
 if (!isset($_SESSION['zaposleni_email'])) {
     header('Location: index.php');
 }
@@ -14,6 +15,7 @@ $zaposleni = getAllEmployees($connection);
 // var_dump($zaposleni);
 $svepozicije = getAllPositions($connection);
 // var_dump($svepozicije);
+// oop
 ?>
 
 
@@ -21,15 +23,14 @@ $svepozicije = getAllPositions($connection);
 
 <!-- BODY -->
 <div class="container main">
-
     <!-- Add new User -->
     <form action="add_page.php" method="POST">
         <br>
         <button name="add_new_user" value="add_new">Add new User</button>
     </form>
-
     <!-- Select option filter -->
     <form action="">
+        <h2>All Employees</h2>
         <p>Choose a position:</p>
 
         <select name="" id="">
@@ -72,33 +73,9 @@ $svepozicije = getAllPositions($connection);
                     </form>
                 </tr>
             <?php endforeach; ?>
-
         </tbody>
     </table>
 
-
-    <?php
-    echo "<br>";
-
-    ?>
-    Stranica “Zaposleni” :
-    -Ima navigaciju.
-    Na ovoj stranici izlistavamo podatke o zaposlenima u kompaniji. Po defaultu izlistavamo sve
-    zaposlene I sortiramo prema plati.
-    Ime,prezime,pozicija,plata. Pored ovih podataka treba da stoji button za azuriranje I button za
-    brisanje zaposlenog.
-    Ima dropdown “Pozicija” , pretrazi I dodaj button. U dropdown “Pozicija” treba prikazati pozicije
-    (programer,menadzer,dizajner,system administrator)
-    Klikom na pretrazi button izlistavamo samo zaposlene koji pripadaju izabranoj poziciji.
-    Klikom na dodaj button se otvara nova stranica, gde moze administrator da doda novog radnika u
-    sistem.
-    Klikom na azuriraj button se otvara nova stranica I administrator moze da azurira podatke
-    zaposlenom.
-    Klikom na brisanje button obrisemo zaposlenog.
-    Potrebno je napraviti validaciju na input polja :
-    ime I prezime ne moze da sadrzi broj I ne moze ostati prazna.
-    Polje plata moze da bude samo broj I ne moze ostati prazna.
-    Error poruke je potrebno prikazati ispod input polja, bez redirekacija.
 </div>
 
 

@@ -1,5 +1,7 @@
 <?php
 include('../dashboard/loginhandle.php');
+include_once('../dashboard/loginHandle.php');
+
 
 ?>
 
@@ -18,11 +20,11 @@ include('../dashboard/loginhandle.php');
 
             <label>Email:</label>
             <input type="text" name="email" value="">
-            <span><?php echo $errors['email'] ?></span> <br>
+            <span><?php echo !empty($errors['email']) ? $errors['email'] : ''; ?></span> <br>
 
             <label>Password:</label>
             <input type="password" name="password" value="">
-            <span><?php echo $errors['password'] ?></span> <br>
+            <span><?php echo !empty($errors['password']) ? $errors['password'] : ''; ?></span> <br>
 
             <input type="submit" value="Login" name="login-btn">
         </form>

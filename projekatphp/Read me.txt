@@ -1,0 +1,7 @@
+Open index.php in projekatphp\pages\index.php
+
+Login Info
+Username		Password
+daric@yahoo.com 	daric1989
+salic@yahoo.com 	salic1989
+goric@yahoo.com 	goric1989
